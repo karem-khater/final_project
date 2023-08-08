@@ -54,7 +54,7 @@ digitalWrite(e2,1);digitalWrite(f2,1);digitalWrite(g2,1);}
 void nine2(){digitalWrite(a2,1);digitalWrite(b2,1);digitalWrite(c2,1);digitalWrite(d2,0);
 digitalWrite(e2,0);digitalWrite(f2,1);digitalWrite(g2,1);}
 void scroll(){for(int i=15;i>=1;i--){lcd.setCursor(i,1);lcd.print("#");lcd.print("             ");}}
-void number(){switch(score){case 0:zero1();break;case 1:one1();break;case 2:two1();
+void number(){switch(score){case 0:zero1();zero2();break;case 1:one1();break;case 2:two1();
 break;case 3:three1();break;case 4:four1();break;case 5:five1();break;case 6:six1();break;case 7:seven1();
 break;case 8:eight1();break;case 9:nine1();break;case 10:zero1();one2();break;}}
 
