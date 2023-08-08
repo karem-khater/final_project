@@ -68,6 +68,6 @@ lcd.setCursor(1,0);lcd.print(" ");lcd.setCursor(1,1);lcd.print(">");lcd.setCurso
 else if(reading1==0&&reading2==0){lcd.clear();lcd.print("restarting game");tone(buzzer2,200,1000);delay(1000);score=0;}
 else if(reading1==1&&reading2==1){lcd.clear();lcd.print("game over");tone(buzzer2,900,500);delay(500);score=0;}
 else if(reading1==1&&reading2==0){lcd.clear();lcd.print("restarting game");tone(buzzer2,200,1000);delay(1000);score=0;}
-if(score==10){lcd.clear();lcd.home();tone(buzzer2,3000,2000);lcd.print("congrats gameover");
+if(score==11){lcd.clear();lcd.home();tone(buzzer2,3000,2000);lcd.print("congrats gameover");
 lcd.setCursor(0,1);lcd.print("developed by KTK");tone(buzzer1,1500,1000);delay(5000);score=0;}
 }
